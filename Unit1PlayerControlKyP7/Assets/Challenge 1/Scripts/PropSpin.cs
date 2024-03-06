@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PropSpin : MonoBehaviour
 {
+    float spinSpeed = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,6 @@ public class PropSpin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.forward);
+        transform.Rotate(Vector3.forward * spinSpeed);
     }
 }
